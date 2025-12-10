@@ -5,6 +5,10 @@ export class Cart{
         this.items = [];
     }
 
+getAllProducts() {
+    return this.items;
+}
+
     addProduct(product, quantity = 1) {
         
         const existing = this.items.find(item => item.product.id === product.id);
