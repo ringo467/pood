@@ -1,6 +1,7 @@
 import { Product } from "./ÜL2/Product.js";
 import { Cart } from "./ÜL2/Cart.js";
 import { Customer } from "./ÜL2/Customer.js";
+import { navigate } from "./router.js";
 
 const products = [
     new Product(1, "Sülearvuti", 999.99, "Elektroonika"),
@@ -13,7 +14,13 @@ customerConstructor.toggleFavorites(products[0]);
 
 const initApp = async () => {
     const favoritesButton = document.getElementById("favorites-button");
+    favoritesButton.onclick = () => navigate("favorites");
+
     const cartButton = document.getElementById("cart-button");
+    homeButton.onclick = () => navigate("cart");
+    
+    const homeButton = document.getElementById("home-button")
+    homeButton.onclick = () => initApp();
 
     displayAllProductsView(products);
     displayProductDetailView(products[1]);

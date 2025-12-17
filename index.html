@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,23 @@
 <body>
     <header class="header">
         <a href="index.html"><h1>E-pood</h1></a>
+        <div id="categories">
+
+        </div>
     </header>
     <div>
-        <button id="lemmikud">Lemmikud</button>
-        <button id="ostukorv">Ostukorv</button>
+        <button id="favorites-button">Lemmikud</button>
+        <button id="cart-button">Ostukorv</button>
     </div>
     <div id="output"></div>
 
     <script type="module" src="main.js"></script>
+<main>
+    <section id="main-container"></section>
+    <section id="detailed-view"></section>
+    <section id="cart-view"></section>
+    <section id="favorite-view"></section>
+</main>
+<script type="module" src="/main.js"></script>
 </body>
 </html>
