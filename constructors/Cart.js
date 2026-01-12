@@ -56,4 +56,5 @@ getAllProducts() {
     }
 }
 
+export { Cart };
 export const cartConstructor = new Cart();
